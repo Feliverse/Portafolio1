@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
 }
 
 body {
@@ -10,6 +11,23 @@ body {
 h2 {
     color: #6070ff;
     font-weight: 700;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 10%;
+}
+
+header a {
+    text-decoration: none;
+    padding: 7px;
+}
+
+header a:hover {
+    background-color: bisque;
+    border-radius: 50%;
+    padding: 5%;  
 }
 
 .home {
@@ -32,6 +50,11 @@ h1 {
     color: #172b4d;
 }
 
+h1:hover {
+    font-size: 40px;
+    cursor: pointer;
+}
+
 .home p {
     font-weight: 400;
     font-size: 1rem;
@@ -43,9 +66,27 @@ h1 {
 .fa-brands {
     color: #505f79;
     text-decoration: none;
-   
+    font-size: larger;
 }
 
 ul {
     padding: 0;
+}
+
+button {
+    color: #fff;
+    background-color: black;
+    padding: 15px;
+}
+
+button:hover {
+    color: black;
+    background-color: #fff;
+    border: 4px solid black;
+}
+
+button:after {
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
 }
